@@ -1,3 +1,5 @@
+<%= link_to "New" , new_entry_path %>
+
 <div>
   <% @entries.each do |entry|
   %>
@@ -10,6 +12,9 @@
     <p>
       <%= entry.contents %>
     </p>
+
+    <%= link_to "Edit" , edit_entry_path(entry) %>
+    <%= link_to "Destroy" , entry_path(entry), method: :delete %>
 
   <% end %>
   </p>
