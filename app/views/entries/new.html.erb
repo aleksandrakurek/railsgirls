@@ -1,0 +1,9 @@
+<div class="offset-2 col-8" style="padding-top:100px">
+  <h1>New</h1>
+  <%= bootstrap_form_for @entry do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_area :contents %>
+    <%= f.submit %>
+  <% end %>
+</div>
+

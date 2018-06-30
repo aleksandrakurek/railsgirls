@@ -1,2 +1,15 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div>
+  <h1>My favourite websites</h1>
+  <ul>
+
+
+    <% @websites.each do |(url, name)|
+      "#{name} => #{url}"         %>
+      <li><a href="<%= url %>"><%= name %></a></li>
+    <% end %>
+
+  </ul>
+
+
+
+  <img src="http://railsgirls.com/images/rg-warsaw.png"/>

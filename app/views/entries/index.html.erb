@@ -1,0 +1,16 @@
+<div>
+  <% @entries.each do |entry|
+  %>
+    <h3>
+      <%= entry.title %>
+    </h3>
+    <span>
+        <%= entry.date %>
+      </span>
+    <p>
+      <%= entry.contents %>
+    </p>
+
+  <% end %>
+  </p>
+</div>
